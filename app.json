@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "chatapp",
+    "name": "ChatApp",
     "slug": "chatapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,10 +12,18 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mmx10d.chatapp"
     },
     "android": {
+      "package": "com.mmx10d.chatapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -25,6 +33,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "61b6b714-bda4-48d1-9a3d-0cd79f680187"
+      }
     }
   }
 }
