@@ -8,7 +8,7 @@ interface MessageProps {
   id: number;
   username: string;
   password: string;
-  chats:
+  chats: any;
 }
 
 export default function App() {
